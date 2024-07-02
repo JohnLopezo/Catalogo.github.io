@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat&aacute;logo Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="parallax parallax-1">
+        <div class="header">
+            <div class="scroll">
+                <p>Radio y Televisi&oacute;n</p>
+                <p>de Hidalgo</p>
+            </div>
+            <div>
+                <img class="img" src="img/274883186-a34a77e4-37e3-420d-b207-b2aa43b98f1a.png" alt="">
+            </div>
+        </div>
+        <div class="text-overlay">
+            <h1>Explora nuestro contenido</h1>
+            <p>Descubre m&aacute;s sobre nosotros y nuestro trabajo</p><br>
+            <div class="social-icons" id="social-icons">
+                <a href="https://www.facebook.com/radioytvdehidalgo" target="_blank" class="facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/radioytelevisiondehidalgo/" target="_blank" class="instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@radioytvdehidalgo" target="_blank" class="tiktok"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://twitter.com/RadioTvHidalgo" target="_blank" class="x"><i
+                        class="fab fa-x twitter"></i></a>
+                <a href="https://www.youtube.com/@radioytvdehidalgo" target="_blank" class="youtube"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+</html>
+<div class="cards-container">
+    <h3>Nuestros Programas</h3>
+
+    <!-- Botones de filtro -->
+    <div class="filter-buttons">
+        <button onclick="filterCards('all')">Todos</button>
+        <button onclick="filterCards('deportes')">Deportes</button>
+        <button onclick="filterCards('debate')">Debate</button>
+        <button onclick="filterCards('cultura')">Cultura</button>
+        <button onclick="filterCards('musical')">Música</button>
+        <button onclick="filterCards('noticieros')">Noticieros</button>
+        <button onclick="filterCards('revista')">Revista</button>
+        <button onclick="filterCards('politica')">Politica</button>
+        <button onclick="filterCards('otros')">Otros</button>
+    </div>
+
+    <div class="cards">
+        <!-- Aquí se generan las 31 tarjetas -->
+        <div class="canal musical" data-category="musical" onclick="mostrarDetalles('programa1')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>XPLOSIÓN SÓNICA</h3> 
+        </div>
+        <div class="canal deportes" data-category="deportes" onclick="mostrarDetalles('programa2')">
+            <img src="img/Ya es Hora.jpg" alt="">
+            <h3>T.D.H.</h3>
+        </div>
+        <div class="canal musical" data-category="musical" onclick="mostrarDetalles('programa3')">
+            <img src="img/Entre Autores.jpg" alt="">
+            <h3>ENTRE AUTORES</h3>
+        </div>
+        <div class="canal cultura" data-category="cultura" onclick="mostrarDetalles('programa4')">
+            <img src="img/Leyendas.jpg" alt="">
+            <h3>¡SILENCIO EN EL FORO!</h3>
+        </div>
+        <div class="canal cultura" data-category="cultura" onclick="mostrarDetalles('programa5')">
+            <img src="img/Leyendas.jpg" alt="">
+            <h3>LEYENDAS DEL ESTADO DE HIDALGO</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa6')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>CON CIENCIA</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa7')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>CASI GUAPOS</h3>
+        </div>
+        <div class="canal revista" data-category="revista" onclick="mostrarDetalles('programa8')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>MI SEXTO SENTIDO</h3>
+        </div>
+        <div class="canal deportes" data-category="deportes" onclick="mostrarDetalles('programa9')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>TU RUTINA</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa10')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>¡SÚPER AGENTES!</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa11')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>DESDE OTRO ÁNGULO</h3>
+        </div>
+        <div class="canal cultura" data-category="cultura" onclick="mostrarDetalles('programa12')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>ARTESANOS</h3>
+        </div>
+        <div class="canal cultura" data-category="cultura" onclick="mostrarDetalles('programa13')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>CONVENTOS, HÁBITOS Y RAÍCES</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa14')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>TRANSFORMANDO NEGOCIOS</h3>
+        </div>
+        <div class="canal cultura" data-category="cultura" onclick="mostrarDetalles('programa15')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>HISTORIAS DE VIDA</h3>
+        </div>
+        <div class="canal noticieros" data-category="noticieros" onclick="mostrarDetalles('programa16')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>VOCALES RADIO</h3>
+        </div>
+        <div class="canal musical" data-category="musical" onclick="mostrarDetalles('programa17')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>RTVH EN CONCIERTO</h3>
+        </div>
+        <div class="canal musical" data-category="musical" onclick="mostrarDetalles('programa18')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>RTVH VIDEOS</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa19')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>YA ES HORA</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa20')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>LA ENTREVISTA</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa21')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>MENTE SANA</h3>
+        </div>
+        <div class="canal politica" data-category="politica" onclick="mostrarDetalles('programa22')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>HIDALGO HOY</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa23')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>ENTÉRATE YA</h3>
+        </div>
+        <div class="canal debate" data-category="debate" onclick="mostrarDetalles('programa24')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>SOBRE LA MESA (DEPORTES)</h3>
+        </div>
+        <div class="canal debate" data-category="debate" onclick="mostrarDetalles('programa25')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>SOBRE LA MESA (POLÍTICA)</h3>
+        </div>
+        <div class="canal politica" data-category="politica" onclick="mostrarDetalles('programa26')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>LA VOZ DEL PUEBLO</h3>
+        </div>
+        <div class="canal noticieros" data-category="noticieros" onclick="mostrarDetalles('programa27')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>HIDALGO NOTICIAS (MAT. VESP. Y NOCT.)</h3>
+        </div>
+        <div class="canal noticieros" data-category="noticieros" onclick="mostrarDetalles('programa28')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>RESUMEN SEMANAL DE NOTICIAS</h3>
+        </div>
+        <div class="canal musical" data-category="musical" onclick="mostrarDetalles('programa29')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>NOCHE DE VIERNES</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa30')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>CON NOSOTRAS</h3>
+        </div>
+        <div class="canal otros" data-category="otros" onclick="mostrarDetalles('programa31')">
+            <img src="img/XPLOSIÓN SÓNICA_Mesa de trabajo 1.jpg" alt="">
+            <h3>MONKIS</h3>
+        </div>
+    </div>
+</div>
+<!-- Modal para mostrar detalles -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+</body>
+
+</html>
